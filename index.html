@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AçaíDicasa - Cardápio Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-emoji">🍇</div>
+                <h1>Açaí<span>Dicasa</span></h1>
+            </div>
+        </header>
+
+        <section class="secao secao-acai">
+            <h2>Açaí</h2>
+            <div class="produtos-grid" id="acai-opcoes"></div>
+        </section>
+
+        <section class="secao secao-sorvete">
+            <h2>Sorvete</h2>
+            <div class="produtos-grid" id="sorvete-opcoes"></div>
+        </section>
+
+        <section class="secao secao-acompanhamentos">
+            <h2>Acompanhamentos</h2>
+            <div class="acompanhamentos-grid" id="acompanhamentos-lista"></div>
+        </section>
+
+        <section class="secao secao-caldas">
+            <h2>Caldas para Açaí</h2>
+            <div class="caldas-grid" id="caldas-lista"></div>
+        </section>
+
+        <section class="secao secao-caldas-sorvete">
+            <h2>Caldas Premium para Sorvete</h2>
+            <div class="caldas-sorvete-grid" id="caldas-sorvete-lista"></div>
+        </section>
+
+        <section class="secao secao-pedido">
+            <h2>Seu Pedido</h2>
+            <div class="resumo-pedido">
+                <div class="item-pedido" id="resumo-acai">
+                    <h3>Açaí</h3>
+                    <p id="acai-selecionado">Nenhum selecionado</p>
+                </div>
+                <div class="item-pedido" id="resumo-sorvete">
+                    <h3>Sorvete</h3>
+                    <p id="sorvete-selecionado">Nenhum selecionado</p>
+                </div>
+                <div class="item-pedido" id="resumo-acompanhamentos">
+                    <h3>Acompanhamentos</h3>
+                    <p id="acompanhamentos-selecionados">Nenhum selecionado</p>
+                </div>
+                <div class="item-pedido" id="resumo-caldas">
+                    <h3>Caldas Açaí</h3>
+                    <p id="caldas-selecionadas">Nenhuma selecionada</p>
+                </div>
+                <div class="item-pedido" id="resumo-caldas-sorvete">
+                    <h3>Caldas Sorvete</h3>
+                    <p id="caldas-sorvete-selecionadas">Nenhuma selecionada</p>
+                </div>
+                <div class="total-pedido">
+                    <h3>Total: R$ <span id="total-valor">0.00</span></h3>
+                </div>
+            </div>
+
+            <div class="opcoes-consumo">
+                <h3>Como vai consumir?</h3>
+                <div class="consumo-opcoes">
+                    <label class="consumo-opcao">
+                        <input type="radio" name="consumo" value="local" checked>
+                        <span>No local</span>
+                    </label>
+                    <label class="consumo-opcao">
+                        <input type="radio" name="consumo" value="viagem">
+                        <span>Para viagem</span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="enviar-pedido" class="btn-enviar">
+                <i class="fab fa-whatsapp"></i> Enviar Pedido via WhatsApp
+            </button>
+        </section>
+
+        <footer class="rodape">
+            <div class="horarios">
+                <h3>Horários de Funcionamento</h3>
+                <p>Segunda a Sábado: 10h às 22h</p>
+                <p>Domingo: 12h às 20h</p>
+            </div>
+            <div class="contato">
+                <h3>Faça seu pedido</h3>
+                <p><i class="fab fa-whatsapp"></i> (11) 91992-6172</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/pedido.js"></script>
+    <script src="js/whatsapp.js"></script>
+</body>
+</html>

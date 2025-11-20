@@ -1,0 +1,48 @@
+/* Responsividade */
+@media (max-width: 992px) {
+    .produtos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    
+    .acompanhamentos-grid, .caldas-grid, .caldas-sorvete-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .consumo-opcoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contato p {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .acompanhamentos-grid, .caldas-grid, .caldas-sorvete-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .logo-emoji {
+        font-size: 3rem;
+    }
+}
